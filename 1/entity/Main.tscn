@@ -1,0 +1,26 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://script/Load.gd" type="Script" id=1]
+[ext_resource path="res://img/desk.png" type="Texture" id=2]
+[ext_resource path="res://img/elf.png" type="Texture" id=3]
+[ext_resource path="res://script/Part2.gd" type="Script" id=4]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource( 4 )
+
+[node name="Elf" type="Sprite" parent="."]
+position = Vector2( 32, 35 )
+texture = ExtResource( 3 )
+
+[node name="Desk" type="Sprite" parent="."]
+position = Vector2( 32, 52 )
+texture = ExtResource( 2 )
+
+[node name="Elfs" type="Node2D" parent="."]
+script = ExtResource( 1 )
+
+[node name="CookieResults" type="RichTextLabel" parent="."]
+margin_left = 109.0
+margin_top = 184.0
+margin_right = 895.0
+margin_bottom = 413.0
